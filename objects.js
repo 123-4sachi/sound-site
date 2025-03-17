@@ -78,43 +78,53 @@
 // console.log(menu);
 
 
-student = {
-   name: "Alex",
-   age:"twenty",
-   marks: [80,90,78,92]
-}
+// student = {
+//    name: "Alex",
+//    age:"twenty",
+//    marks: [80,90,78,92]
+// }
 
-student.marks.push(83);
-let total = 0;
-let avg = 0;
+// student.marks.push(83);
+// let total = 0;
+// let avg = 0;
 
-for (let value in student.marks) {
-   if (typeof student.marks[value] == 'number'){
-   total += student.marks[value];
-   }
-   const Newavg = avg = total / 4;
-}
+// for (let value in student.marks) {
+//    if (typeof student.marks[value] == 'number'){
+//    total += student.marks[value];
+//    }
+//    const Newavg = avg = total / 4;
+// }
 
-console.log(total);
+// console.log(total);
 
-console.log(avg);
+// console.log(avg);
 
-/// 3rd exercise
+// /// 3rd exercise
+
+// team = {
+//    name: "Alice", score: 10,
+//    name: "Bob", score: 15 ,
+//    name: "Charlie", score: 12 
+// };
+
+
+// let totalScore = 0;
+
+// for (let value in team.score) {
+//    if (typeof team.score[value] == 'number'){
+//       totalScore += team.score[value];
+//    }
+// };
+
+
+// console.log(totalScore);
+
+
+
+let roboDog1 = { sound: "woof", speak() { console.log(this.sound); } };
 
 team = {
-   name: "Alice", score: 10,
+   name: "Alice", score: 10, { console.log(this.name this.score);}
    name: "Bob", score: 15 ,
    name: "Charlie", score: 12 
 };
-
-
-let totalScore = 0;
-
-for (let value in team.score) {
-   if (typeof team.score[value] == 'number'){
-      totalScore += team.score[value];
-   }
-};
-
-
-console.log(totalScore);
