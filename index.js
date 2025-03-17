@@ -1,131 +1,53 @@
-// // console.log(`hello`);
-// // console.log(`I like pizza`);
-
-// // window.alert(`this is an alert!`);
-
-// // let msg = 'kitu';
-
-// // function showMessage(from,text) {
-// //     form = '*' + from + '*';
-// //     alert(from + ':' + text);
-// // }
-
-// // let from = msg = 'sachi';
-
-// // showMessage(from, "hello");
-
-// // alert(from);
+//variables
 
 
-// function result(test) {
-//     if (test  === 99) {
-//         return true; 
-//     } else {
-//       return false; 
-//     }
-    
-// }
+let name = "sachi";
+let age = "20";
+let incollege = false;
 
-// let test = parseInt(prompt('What is 59 + 40 is = ?'));
-
-// if ( result(test)) {
-//     alert( 'Shabas beta' );
-// } else {
-//     alert ("You fucking idiot, get out of here");
-    
-// }
+document.getElementById("1").textContent = `We can call ${name} right?` ;
+document.getElementById("2").textContent = `And how old are you ${age}?`;
+document.getElementById("3").textContent = `Are you going to college ${incollege}`;
 
 
-// function checkRel(number 1, number2){
-//     return number1 + number2
-// }
+//Arithmetic operators
+let student = 30;
 
-// const result = checkRel (3,5)
+// student *= 69;
+// student /= 9;
+// student **= 7;
 
-// console.log("Result: ", result);
+let extraStudent = student ** 4;
 
-
-// (function(x) {21322
-//     delete x;
-//     console.log(x);
-//   })(5);
-  
+console.log(extraStudent);
 
 
-// function checkAge(age) {
-//     if (age > 18) {
-//       return true;
-//     } else {
-//       // ...
-//       return confirm('Did parents allow you?');
-//     }
-//   }
- 
-// console.log(checkAge(199));
+//Accept user input
+let username;
+// username = window.prompt("what's your name NIgga?")
 
-// const myArr = [0,1,2,3,4,5]
-
-// console.log(myArr.includes(9));
-
-// const friends = [`arjun`,`riya`, "jiya", "chick",];
-// friends[2] = 'sunny';
-// friends.shift();
-// friends.unshift('cookie');
-
-// console.log(friends);
+// console.log(username);
 
 
-
-let myCrushes = ['rand', 'tappse', 'kriti', 'ryan', 'henry'];
-//now i want to add new crushes too at the end and at the beginning
-myCrushes.unshift('jake');
-myCrushes.push('drive');
-//no. method
-myCrushes[6]='samiksha';
-//accessing the last one and the first once let's see what changed
-
-// trying splice
-myCrushes.splice(1,1);
-myCrushes.splice(2,0, 'nigga', 'higa');
-
-//trying slice
-console.log(myCrushes.slice(1,5));
-
-console.log(myCrushes.at(-1));
-console.log(myCrushes.at(0));
-
-console.log(myCrushes);  //let's see if this way of study gonna work
+document.getElementById("submit"),onclick = function(){
+    username = this.document.getElementById("myText").value;
+    document.getElementById("H1").textContent = `Hello ${username} Nigga`
+}
 
 
+//type conversion
 
-let styles = ['jazz', 'blue']
-//let's push rock n rol
-styles.push('rock-n-roll');
+// let aage = window.prompt("what's your age?")
 
-//replacing blue with classics
-styles[1] = 'classics';
+let aage;
 
-//extravting first element
-styles.shift();
-styles.unshift('Rap', 'Reggae');
+document.getElementById("ageSubmit").onclick = function(){
+    aage = document.getElementById("ageText").value;
+    aage = Number(aage);
+    let upAge = aage + 1;
 
-console.log(styles);
-
-
-const all = myCrushes.concat(styles);
-console.log(all);
-
-const allOf = [...myCrushes, ...styles]
-console.log(allOf);
-
-
-const One = [1,2,3,4,5,[2,3,4,5,5,6],34,[34,5,4,65,76,786,8]]
-const One1 = One.flat(Infinity);
-console.log(One1);
-
-
-
-
-
+    let msg = `so your age ${aage}, and you are be running for ${upAge}`;
+    document.getElementById("myH3").textContent = msg;
+}
 
 

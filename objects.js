@@ -124,7 +124,13 @@
 let roboDog1 = { sound: "woof", speak() { console.log(this.sound); } };
 
 team = {
-   name: "Alice", score: 10, { console.log(this.name this.score);}
+   Aname: "Alice", score: 10,
    name: "Bob", score: 15 ,
    name: "Charlie", score: 12 
 };
+
+console.log(team.hasOwnProperty('name'));
+
+const {Aname: nm} = team
+console.log(nm);
+
